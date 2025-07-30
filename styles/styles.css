@@ -1,50 +1,68 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
+:root {
+    --main-blue: darkblue;
+    --main-padding: 10px;
+    --nav-link-padding: 20px;
+    --main-img-width: 150px;
+    --main-img-border: 1px solid black;
+    --main-img-shadow: 0 0 30px gray;
+    --aside-width: 200px;
+    --aside-border: 5px solid black;
+    --aside-padding: 10px;
+    --aside-bg: rgb(77, 225, 159);
+    --aside-color: darkolivegreen;
+    --footer-border: 1px solid #000;
+}
 
+/* Navigation */
+nav {
+    background-color: var(--main-blue);
+    padding: var(--main-padding);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--nav-link-padding);
 }
 
+/* Headings */
 h1 {
-    color: darkblue;
+    color: var(--main-blue);
 }
 
+/* Main image */
 main img {
-    width: 150px;
+    width: var(--main-img-width);
     height: auto;
-    border: 1px solid black;
+    border: var(--main-img-border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-
+    box-shadow: var(--main-img-shadow);
 }
 
+/* Paragraph */
 p {
     padding: 0;
 }
 
+/* Aside */
 aside {
-    width: 200px;
+    width: var(--aside-width);
     height: auto;
     margin: 20px;
-    border: 5px solid black;
-    padding: 10px;
-    background-color: rgb(77, 225, 159);
-    color: darkolivegreen;
-
+    border: var(--aside-border);
+    padding: var(--aside-padding);
+    background-color: var(--aside-bg);
+    color: var(--aside-color);
 }
 
 aside img {
-    width: 200px;
+    width: var(--aside-width);
     height: auto;
 }
 
+/* Footer */
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--footer-border);
     text-align: center;
 }
