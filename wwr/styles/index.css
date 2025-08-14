@@ -81,13 +81,35 @@ p {
     padding: 20px;
     background-color: #fff;
     font-family: var(text-font);
-    text-align: center;
+    justify-content: center;
+
 }
 .info-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 40px 0;
     color: var(--accent1-color)
-    
+    justify-content: center;    
+}
+.rafting-info.info-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rafting-info.info-item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rafting-info.info-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    align-items: center;
 }
